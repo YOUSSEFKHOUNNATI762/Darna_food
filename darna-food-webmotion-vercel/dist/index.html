@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Darna Food — L’art de recevoir à Casablanca</title>
+<meta name="description" content="Restaurant marocain à Casablanca : tajines, couscous, tanjia et carte rapide. Commandez en ligne ou réservez une table.">
+<script>var d=document.documentElement;d.className="js";try{if(!sessionStorage.df_i&&!matchMedia("(prefers-reduced-motion:reduce)").matches){d.classList.add("intro");sessionStorage.df_i=1}}catch(e){}setTimeout(function(){if(!window.__rv)d.className="rvf"},3500)</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#24392F;--iv:#F5EBDD;--tc:#B96F46;--au:#C5A46D;--tx:#252923;--w:#fff;--line:rgba(37,41,35,.18);--bg:var(--iv);--fg:var(--tx);--sf:#fbf6ee}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#17241d;--fg:#F5EBDD;--sf:#1e2e26;--line:rgba(245,235,221,.2)}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 Figtree,system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+[lang=ar] body{font-family:'Noto Naskh Arabic',serif;font-size:19px}
+h1,h2,h3{font-family:'Young Serif',Georgia,serif;font-weight:400;line-height:1.1}
+[lang=ar] h1,[lang=ar] h2,[lang=ar] h3{font-family:'Noto Naskh Arabic',serif;font-weight:700;line-height:1.35}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--au);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(18px,4vw,40px)}
+.btn{display:inline-block;border:1.5px solid currentColor;background:none;color:inherit;font:inherit;font-weight:700;padding:.7em 1.3em;border-radius:999px;cursor:pointer;text-decoration:none;min-height:44px}
+.btn.f{background:var(--tc);border-color:var(--tc);color:#fff}
+.btn:hover{filter:brightness(1.08)}
+header{position:sticky;top:0;z-index:20;background:var(--g);color:var(--iv);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.logo{font-family:'Young Serif',serif;font-size:1.45rem;text-decoration:none;display:flex;align-items:center;gap:9px;margin-inline-end:auto}
+.logo svg{width:26px;height:30px}
+nav{display:flex;gap:22px;font-size:.95rem}
+nav a{text-decoration:none;opacity:.9}nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+.lang button{background:none;border:0;color:inherit;font:inherit;font-size:.9rem;padding:8px 6px;cursor:pointer;opacity:.6}
+.lang button[aria-pressed=true]{opacity:1;border-bottom:2px solid var(--au)}
+#cartBtn{position:relative;background:var(--tc);border:0;color:#fff;font:inherit;font-weight:700;border-radius:999px;padding:.55em 1.1em;cursor:pointer;min-height:44px}
+#burger{display:none;background:none;border:0;color:inherit;font-size:1.6rem;min-width:44px;min-height:44px}
+@media(max-width:860px){nav{display:none;position:absolute;top:100%;inset-inline:0;background:var(--g);flex-direction:column;padding:14px 24px 22px;gap:4px}nav.open{display:flex}nav a{padding:10px 0}#burger{display:block}.logo{font-size:1.2rem}}
+.hero{background:var(--g);color:var(--iv);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,70px);align-items:end;padding-top:clamp(36px,6vw,80px)}
+.hero h1{font-size:clamp(2.5rem,6vw,4.9rem);letter-spacing:-.01em;max-width:11ch}
+[lang=ar] .hero h1{max-width:none}
+.hero p{margin:22px 0 30px;max-width:42ch;font-size:1.12rem;opacity:.92}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px;padding-bottom:clamp(36px,6vw,80px)}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:4/5;border:2px solid var(--au);border-bottom:0;padding:10px 10px 0}
+.arch img{width:100%;height:100%;object-fit:cover;border-radius:999px 999px 0 0}
+.hero .arch{max-width:460px;justify-self:end;width:100%}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero .arch{order:-1;aspect-ratio:5/4;max-width:none;border-radius:200px 200px 0 0;justify-self:stretch}.hero .arch img{border-radius:190px 190px 0 0}.hero .acts{padding-bottom:36px}}
+section{padding-block:clamp(56px,8vw,110px)}
+h2{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:12px}
+.lead{max-width:56ch;opacity:.85}
+.sig{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:44px}
+.sig article{display:flex;flex-direction:column}
+.sig .arch{border-width:1.5px;border-bottom:1.5px solid var(--au);border-radius:999px 999px 14px 14px;padding:7px}
+.sig .arch img{border-radius:999px 999px 8px 8px}
+.sig h3{font-size:1.3rem;margin:16px 0 6px}
+.sig p{font-size:.95rem;opacity:.85;flex:1}
+.sig .row{display:flex;align-items:center;justify-content:space-between;margin-top:14px;font-weight:700}
+.sig:nth-child(n) article:nth-child(even){margin-top:36px}
+@media(max-width:900px){.sig{grid-template-columns:repeat(2,1fr)}.sig article:nth-child(even){margin-top:0}}
+@media(max-width:520px){.sig{grid-template-columns:1fr}}
+#menu{background:var(--sf)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 14px;align-items:center}
+.tools input,.tools select{font:inherit;padding:.6em 1em;border:1.5px solid var(--line);border-radius:999px;background:var(--bg);color:inherit;min-height:44px}
+.tools input{flex:1;min-width:180px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chips button{font:inherit;font-size:.92rem;border:1.5px solid var(--line);background:none;color:inherit;padding:.4em 1em;border-radius:999px;cursor:pointer;min-height:40px}
+.chips button[aria-pressed=true]{background:var(--g);color:var(--iv);border-color:var(--g)}
+.items{columns:2;column-gap:56px}
+@media(max-width:820px){.items{columns:1}}
+.it{break-inside:avoid;display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.it img{width:62px;height:62px;border-radius:50%;object-fit:cover;flex:none}
+.it .n{flex:1}
+.it b{display:block;font-weight:700}
+.it small{opacity:.7}
+.tag{display:inline-block;font-size:.78rem;color:var(--tc);margin-inline-end:8px}
+.it .p{font-weight:700;white-space:nowrap}
+.add{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--tc);color:var(--tc);background:none;font-size:1.4rem;cursor:pointer;flex:none}
+.add:hover:not(:disabled){background:var(--tc);color:#fff}
+.add:disabled{opacity:.35;cursor:not-allowed;border-color:var(--line);color:inherit}
+.it.off .n{opacity:.5}
+.story{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;background:var(--g);color:var(--iv);padding:0}
+.story img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.story div{padding:clamp(32px,6vw,90px);align-self:center}
+.story p{margin-top:16px;max-width:46ch;opacity:.92}
+@media(max-width:800px){.story{grid-template-columns:1fr}}
+.promos{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:34px;border-top:2px solid var(--fg)}
+.promos div{padding:22px 24px 22px 0;border-bottom:1px solid var(--line)}
+[dir=rtl] .promos div{padding:22px 0 22px 24px}
+.promos h3{font-size:1.25rem;margin-bottom:6px}.promos small{opacity:.7;display:block;margin-top:8px}
+@media(max-width:800px){.promos{grid-template-columns:1fr}}
+.demo{display:inline-block;font-size:.82rem;border:1px dashed var(--tc);color:var(--tc);padding:.15em .8em;border-radius:999px;margin-bottom:14px}
+.rev{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:30px}
+.rev blockquote{border-inline-start:3px solid var(--au);padding-inline-start:18px}
+.rev cite{display:block;margin-top:8px;font-size:.9rem;opacity:.7;font-style:normal}
+@media(max-width:800px){.rev{grid-template-columns:1fr;gap:26px}}
+#resa{background:var(--g);color:var(--iv)}
+#resa .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,6vw,80px)}
+form{display:grid;gap:14px}
+label{display:grid;gap:5px;font-size:.92rem;font-weight:500}
+input,select,textarea{font:inherit}
+form input,form select,form textarea{padding:.7em .9em;border-radius:10px;border:1.5px solid var(--line);background:#fff;color:var(--tx);min-height:44px;width:100%}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.msg{padding:12px 14px;border-radius:10px;background:rgba(197,164,109,.2);border:1px solid var(--au);display:none}
+.msg.err{background:rgba(185,111,70,.18);border-color:var(--tc)}
+@media(max-width:800px){#resa .grid{grid-template-columns:1fr}}
+footer{background:#1a2a22;color:var(--iv);padding-block:44px;font-size:.93rem}
+footer .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+footer p{opacity:.8}footer .fine{grid-column:1/-1;border-top:1px solid rgba(245,235,221,.2);padding-top:18px;font-size:.84rem}
+@media(max-width:800px){footer .wrap{grid-template-columns:1fr}}
+#drawer{position:fixed;inset-block:0;inset-inline-end:0;width:min(440px,100%);background:var(--bg);z-index:40;transform:translateX(110%);transition:transform .3s;display:flex;flex-direction:column;box-shadow:-8px 0 30px rgba(0,0,0,.25);padding-bottom:env(safe-area-inset-bottom,0px)}
+[dir=rtl] #drawer{transform:translateX(-110%)}
+#drawer.open{transform:none}
+#drawer>header{position:static;display:flex;justify-content:space-between;align-items:center;padding:16px 20px}
+#drawer .body{flex:1;overflow:auto;padding:8px 20px}
+#drawer .foot{padding:16px 20px;border-top:1px solid var(--line);display:grid;gap:10px}
+.ci{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.ci .n{flex:1}.q{display:flex;align-items:center;gap:6px}.q button{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line);background:none;color:inherit;font-size:1.1rem;cursor:pointer}
+.tot{display:flex;justify-content:space-between}.tot.b{font-weight:700;font-size:1.15rem}
+.seg{display:flex;gap:8px}.seg label{display:flex;flex:1;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:10px;padding:8px 10px}
+#drawer input[type=text],#drawer input[type=tel],#drawer textarea{padding:.6em .8em;border-radius:10px;border:1.5px solid var(--line);background:var(--sf);color:inherit;width:100%;min-height:44px}
+#scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:30;display:none}#scrim.open{display:block}
+.wel{color:var(--au);font-weight:700;margin:0 0 14px!important;font-size:1.1rem}.steps{margin:26px 0 0;display:grid;gap:14px}.steps dt{font-family:'Young Serif',serif;color:var(--au);font-size:1.1rem}[lang=ar] .steps dt{font-family:'Noto Naskh Arabic',serif;font-weight:700}.steps dd{margin:0;opacity:.92;font-size:.98rem}.nt{margin-top:22px;font-size:.84rem;opacity:.7;border-top:1px solid rgba(245,235,221,.25);padding-top:12px}.tjg{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(24px,5vw,70px);align-items:center}.tj{position:relative;aspect-ratio:4/3;border:2px solid var(--au);border-radius:200px 200px 12px 12px;overflow:hidden}.tj img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5}.tj canvas{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y}#tjgo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}@media(max-width:800px){.tjg{grid-template-columns:1fr}}.faq details{border-bottom:1px solid var(--line);padding:6px 0}.faq summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}.faq p{padding-bottom:12px;max-width:60ch;opacity:.85}.promos .btn{margin-top:12px;padding:.4em 1em}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+html{--base:.1s}html.intro{--base:1.7s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes wipe{to{clip-path:inset(0)}}@keyframes draw{to{stroke-dashoffset:0}}@keyframes introOut{to{opacity:0;visibility:hidden}}
+@keyframes archIn{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}@keyframes imgIn{from{transform:scale(1.22)}to{transform:scale(1.08)}}
+@keyframes bump{40%{transform:scale(1.14)}}@keyframes navin{from{opacity:0;transform:translateY(-8px)}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#intro{position:fixed;inset:0;z-index:100;background:var(--g);color:var(--iv);display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;cursor:pointer}
+.intro #intro{display:flex;animation:introOut .5s 1.7s forwards}
+#intro svg{width:54px;height:62px;fill:none;stroke:var(--au);stroke-width:2}#intro svg path{stroke-dasharray:140;stroke-dashoffset:140;animation:draw 1s .1s forwards}
+#intro b{font:400 2.3rem 'Young Serif',serif;clip-path:inset(0 100% 0 0);animation:wipe .8s .5s forwards}
+#intro span{opacity:0;animation:fadeUp .6s 1s forwards}
+.hero .wel{--o:0s}.hero h1{--o:.12s}.hero p{--o:.28s}.hero .acts{--o:.44s}
+.hero .wel,.hero h1,.hero p,.hero .acts{animation:fadeUp .85s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--base) + var(--o))}
+.hero .arch{animation:archIn 1.3s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--base) + .1s)}
+.hero .arch img{animation:imgIn 2s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--base) + .1s)}
+header .wrap{transition:height .25s}header.sc .wrap{height:54px}header{transition:box-shadow .25s}header.sc{box-shadow:0 2px 14px rgba(0,0,0,.25)}
+nav.open{animation:navin .25s}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}.js .rv.in{opacity:1;transform:none}
+
+.zl{width:min(240px,60%);height:16px;stroke:var(--au);fill:none;stroke-width:1.3;display:block;margin:0 0 18px}.js .zl path,.js .zl g{stroke-dasharray:1;stroke-dashoffset:1}.js .zl.in path,.js .zl.in g{stroke-dashoffset:0;transition:stroke-dashoffset 1.3s ease}
+.btn{transition:background .2s,color .2s,transform .15s,border-color .2s,filter .2s}.btn:hover{transform:translateY(-1px)}.btn:active,.add:active{transform:scale(.96)}
+.add{transition:background .2s,color .2s,transform .15s}.add.ok,.btn.ok{background:var(--tc);color:#fff;border-color:var(--tc)}
+.lang button{transition:opacity .2s,border-color .2s;border-bottom:2px solid transparent}
+#cartBtn.bump{animation:bump .4s}
+.it img,.sig .arch img,.tj img{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+@media(hover:hover){.it:hover img{transform:scale(1.1)}.sig article:hover .arch img{transform:scale(1.06)}}
+.it:active img{transform:scale(1.06)}.it.off img{filter:grayscale(1)}
+.chips{gap:6px 20px}.chips button{border:0;border-radius:0;padding:.35em .1em;position:relative}.chips button::after{content:"";position:absolute;inset-inline:0;bottom:0;height:2px;background:var(--tc);transform:scaleX(0);transition:transform .28s}
+.chips button[aria-pressed=true]{background:none;color:inherit;font-weight:700}.chips button[aria-pressed=true]::after{transform:scaleX(1)}
+.items.sw .it{animation:fadeUp .32s both;animation-delay:calc(var(--i,0)*20ms)}
+#empty:not([hidden]){animation:fadeUp .3s both;padding:18px;border:1px dashed var(--line);border-radius:12px}
+form input,form select,form textarea{transition:border-color .2s,box-shadow .2s}form input:focus,form textarea:focus,form select:focus{border-color:var(--au);box-shadow:0 0 0 3px rgba(197,164,109,.4)}
+.msg{animation:fadeUp .3s both}
+.faq summary{list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";margin-inline-start:auto;font-size:1.4rem;transition:transform .25s}.faq details[open] summary::after{transform:rotate(45deg)}.faq details[open] p{animation:fadeUp .3s both}
+.ci.nw{animation:fadeUp .3s both}.em{width:60px;height:68px;stroke:var(--au);fill:none;stroke-width:2;display:block;margin:30px auto 0}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px;margin-top:28px}.gal button{padding:0;border:0;overflow:hidden;border-radius:12px;position:relative;cursor:zoom-in;background:var(--sf)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gal button:nth-child(1),.gal button:nth-child(6){grid-row:span 2}
+@media(hover:hover){.gal button:hover img{transform:scale(1.07)}}
+.gal span{position:absolute;inset:auto 0 0;padding:18px 12px 8px;color:#fff;font-size:.88rem;text-align:start;background:rgba(20,30,24,.6)}
+@media(max-width:800px){.gal{grid-template-columns:repeat(2,1fr)}}
+#lb{border:0;background:#111;color:#fff;padding:18px;max-width:min(920px,96vw);border-radius:14px}#lb[open]{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px}#lb::backdrop{background:rgba(0,0,0,.72)}
+#lb figure{margin:0;text-align:center}#lb img{max-height:72vh;margin:auto;border-radius:8px}#lb figcaption{margin-top:10px}
+#lb button{background:none;border:1.5px solid rgba(255,255,255,.4);color:#fff;border-radius:50%;width:44px;height:44px;font-size:1.4rem;cursor:pointer}#lbx{position:absolute;top:10px;inset-inline-end:10px}[dir=rtl] #lbp,[dir=rtl] #lbn{transform:scaleX(-1)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important}.js .rv,.js .rvi{opacity:1!important;transform:none!important;clip-path:none!important}.js .zl path,.js .zl g{stroke-dashoffset:0!important}#intro{display:none!important}}
+.rvf .zl path,.rvf .zl g{stroke-dasharray:none}
+
+.hero{position:relative;isolation:isolate;min-height:min(88vh,780px);display:flex;align-items:center}
+.hero .wrap{grid-template-columns:1fr;align-items:center;padding-block:clamp(70px,10vw,130px);width:100%}
+.hero .wrap>div{max-width:640px}.hero .acts{padding-bottom:0}
+.hbg{position:absolute;inset:-30px 0;width:100%;height:calc(100% + 60px);object-fit:cover;z-index:-2;animation:kb 22s ease-out both;animation-delay:var(--base)}
+.hero::before{content:"";position:absolute;inset:0;background:rgba(18,30,23,.6);z-index:-1}
+@keyframes kb{from{transform:scale(1.18);opacity:0}6%{opacity:1}to{transform:scale(1.04);opacity:1}}
+.hero .btn::after{content:"→";display:inline-block;margin-inline-start:.5em;transition:transform .2s}.hero .btn:hover::after{transform:translateX(4px)}[dir=rtl] .hero .btn::after{content:"←"}[dir=rtl] .hero .btn:hover::after{transform:translateX(-4px)}
+.steam{position:absolute;inset-inline-end:10%;bottom:10%;width:120px;height:240px;stroke:rgba(245,235,221,.4);fill:none;stroke-width:3;stroke-linecap:round;pointer-events:none}
+.steam path{animation:rise 7s ease-in-out infinite;opacity:0}.steam path:nth-child(2){animation-delay:2.3s}.steam path:nth-child(3){animation-delay:4.6s}
+@keyframes rise{0%{opacity:0;transform:translateY(40px)}40%{opacity:.9}100%{opacity:0;transform:translateY(-60px)}}
+@media(max-width:860px){.steam{display:none}}
+.mq{overflow:hidden;background:var(--tc);color:#fff;padding:13px 0;white-space:nowrap;font-family:'Young Serif',serif}[lang=ar] .mq{font-family:'Noto Naskh Arabic',serif;font-weight:700}
+.mq .tr{display:inline-flex;width:max-content;animation:mq 50s linear infinite}.mq .g{display:flex;gap:28px;padding-inline-end:28px}.mq i{font-style:normal;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}@keyframes mqr{to{transform:translateX(50%)}}[dir=rtl] .mq .tr{animation-name:mqr}.mq:hover .tr{animation-play-state:paused}
+.promos>div{position:relative}.promos>div::before{content:"";position:absolute;top:-2px;inset-inline:0;height:2px;background:var(--tc);transform:scaleX(0);transform-origin:0 50%;transition:transform .4s}[dir=rtl] .promos>div::before{transform-origin:100% 50%}
+@media(hover:hover){.promos>div:hover::before{transform:scaleX(1)}.it:hover{background:rgba(185,111,70,.07)}}
+.it{transition:background .25s}
+.story{overflow:hidden}
+@supports (animation-timeline:view()){.story img{animation:sz linear both;animation-timeline:view();animation-range:entry 0% cover 55%}@keyframes sz{from{transform:scale(1.18)}to{transform:scale(1)}}}
+#pb{position:fixed;top:0;inset-inline:0;height:3px;background:var(--au);z-index:60;transform:scaleX(0);transform-origin:0 50%;pointer-events:none}[dir=rtl] #pb{transform-origin:100% 50%}
+@supports (animation-timeline:scroll()){#pb{animation:grow linear both;animation-timeline:scroll(root)}@keyframes grow{to{transform:scaleX(1)}}}
+#up{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));inset-inline-start:18px;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--au);background:var(--g);color:var(--iv);font-size:1.2rem;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s;z-index:25}#up.show{opacity:1;transform:none;pointer-events:auto}
+main.lc{animation:fadeUp .4s both}
+</style>
+<link rel="stylesheet" href="assets/maison.css"><link rel="stylesheet" href="assets/motion.css"><link rel="stylesheet" href="assets/journey.css"><link rel="stylesheet" href="assets/editorial.css"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"></head>
+<body><a class="skip-link" href="#menu">Aller à la carte</a><div id="intro" aria-hidden="true"><svg viewBox="0 0 26 30"><path d="M3 29V13C3 6 8 1 13 1s10 5 10 12v16"/><path d="M8 29V14c0-3 2-6 5-6s5 3 5 6v15"/></svg><b>Darna Food</b><span id="introS"></span></div><div id="live" class="sr" aria-live="polite"></div>
+<header><div class="wrap">
+<a class="logo" href="#top" aria-label="Darna Food"><svg viewBox="0 0 26 30" fill="none" stroke="#C5A46D" stroke-width="2"><path d="M3 29V13C3 6 8 1 13 1s10 5 10 12v16"/><path d="M8 29V14c0-3 2-6 5-6s5 3 5 6v15" stroke="#B96F46"/></svg>Darna Food</a>
+<button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+<nav id="nav"><a href="#tajine" data-i="nav_exp"></a><a href="#menu" data-i="n_menu"></a><a href="#histoire" data-i="n_story"></a><a href="#resa" data-i="n_resa"></a><a href="#contact" data-i="n_contact"></a></nav>
+<div class="lang" role="group" aria-label="Langue"><button data-l="fr">FR</button><button data-l="ar">عربية</button><button data-l="en">EN</button></div>
+<button id="cartBtn" aria-haspopup="dialog"><span data-i="cart"></span> (<span id="cnt">0</span>)</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap"><div class="hero-copy"><p class="eyebrow" data-i="eyebrow">CASABLANCA · CUISINE & HOSPITALITÉ</p><p class="wel" data-i="wel"></p><h1 data-i="h1"></h1><p data-i="h1p"></p><div class="acts"><a class="btn f" href="#menu" data-i="b_menu"></a><a class="btn" href="#resa" data-i="b_resa"></a></div><div class="hero-foot"><span class="little-star">✳</span><span data-i="hero_note">Du premier partage au dernier verre de thé.</span></div></div><div class="hero-art"><div class="arch-label" aria-hidden="true">LA MAISON DES SAVEURS</div><div class="hero-frame"><img class="hbg" src="assets/photo-0.webp" alt="Table marocaine généreuse, tajine, couscous et thé à la menthe" fetchpriority="high"></div><a class="hero-seal" href="#tajine"><span data-i="seal">À EXPLORER</span><b>360°</b><span data-i="seal_sub">LE TAJINE ↗</span></a><div class="photo-caption"><span>01 / DARNA FOOD</span><span data-i="caption">L’esprit de la maison.</span></div></div></div><a class="scroll-cue" href="#signature" aria-label="Découvrir">↓</a></div>
+<div class="mq" aria-hidden="true"><div class="tr" id="mqt"></div></div>
+<section id="signature"><div class="wrap">
+<h2 data-i="sig_t"></h2><svg class="zl" viewBox="0 0 240 16" aria-hidden="true"><path pathLength="1" d="M0 8H100"/><path pathLength="1" d="M140 8H240"/><g transform="translate(120 8)" pathLength="1"><rect x="-6" y="-6" width="12" height="12"/><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)"/></g></svg><p class="lead" data-i="sig_p"></p>
+<div class="sig" id="sig"></div></div></section>
+
+<section id="menu"><div class="wrap">
+<h2 data-i="menu_t"></h2>
+<div class="tools"><input id="q" type="search" data-i-ph="search" aria-label="Recherche"><select id="sort" aria-label="Tri"><option value="" data-i="s_def"></option><option value="a" data-i="s_asc"></option><option value="d" data-i="s_desc"></option></select></div>
+<div class="chips" id="chips" role="group"></div>
+<div class="items" id="items" aria-live="polite"></div>
+<p id="empty" hidden data-i="empty" style="margin-top:20px"></p>
+
+</div></section>
+
+<section class="story" id="histoire" style="padding:0"><img src="assets/photo-1.webp" alt="Salle d'un riad avec zelliges, lanternes et tajine fumant" loading="lazy"><div><h2 data-i="st_t"></h2><svg class="zl" viewBox="0 0 240 16" aria-hidden="true"><path pathLength="1" d="M0 8H100"/><path pathLength="1" d="M140 8H240"/><g transform="translate(120 8)" pathLength="1"><rect x="-6" y="-6" width="12" height="12"/><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)"/></g></svg><p data-i="st_p1"></p><p data-i="st_p2"></p><dl class="steps"><dt data-i="s1t"></dt><dd data-i="s1p"></dd><dt data-i="s2t"></dt><dd data-i="s2p"></dd><dt data-i="s3t"></dt><dd data-i="s3p"></dd><dt data-i="s4t"></dt><dd data-i="s4p"></dd></dl></div></section>
+
+<section id="tajine" style="background:var(--g);color:var(--iv)"><div class="wrap tjg"><div><h2 data-i="tj_t"></h2><p class="lead" id="tjp"></p><p style="margin:18px 0;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" id="tjlid"></button><button class="btn f" data-add="tj-poulet" data-i="tj_add"></button></p><small data-i="tj_hint"></small><div class="finish-controls"><button class="finish active" data-finish="green" aria-label="Émail vert" aria-pressed="true"></button><button class="finish terracotta" data-finish="clay" aria-label="Terre cuite" aria-pressed="false"></button><button class="finish ivory" data-finish="ivory" aria-label="Émail ivoire" aria-pressed="false"></button><span id="finishName">Émail émeraude</span></div><button class="btn reset-view" id="resetView" data-i="reset_view">Réinitialiser la vue</button></div><div id="tj" class="tj"><div class="studio-label"><span data-i="studio">L’ATELIER DARNA</span><span>ÉDITION 01</span></div><img id="tjimg" alt="" loading="lazy"><button class="btn f" id="tjgo" data-i="tj_start"></button></div></div></section>
+<section id="partage"><div class="wrap"><h2 data-i="sh_t"></h2><p class="lead" data-i="sh_p"></p><div class="promos"><div><h3 data-i="sh1"></h3><p data-i="sh1d"></p><b data-sp="duo"></b><br><button class="btn" data-set="duo" data-i="sh_btn"></button></div><div><h3 data-i="sh2"></h3><p data-i="sh2d"></p><b data-sp="famille"></b><br><button class="btn" data-set="famille" data-i="sh_btn"></button></div><div><h3 data-i="sh3"></h3><p data-i="sh3d"></p><b data-sp="amis"></b><br><button class="btn" data-set="amis" data-i="sh_btn"></button></div></div></div></section>
+<section id="promos"><div class="wrap"><h2 data-i="pr_t"></h2>
+<div class="promos"><div><h3 data-i="pr1"></h3><p data-i="pr1d"></p><small data-i="pr1c"></small></div><div><h3 data-i="pr2"></h3><p data-i="pr2d"></p><small data-i="pr2c"></small></div><div><h3 data-i="pr3"></h3><p data-i="pr3d"></p><small data-i="pr3c"></small></div></div></div></section>
+
+<section id="avis" class="rituals"><div class="wrap"><p class="eyebrow" data-i="ritual_label"></p><h2 data-i="ritual_title"></h2><div class="ritual-grid"><article><span>01</span><h3 data-i="ritual_1"></h3><p data-i="ritual_1p"></p></article><article><span>02</span><h3 data-i="ritual_2"></h3><p data-i="ritual_2p"></p></article><article><span>03</span><h3 data-i="ritual_3"></h3><p data-i="ritual_3p"></p></article></div></div></section><section id="resa"><div class="wrap grid">
+<div><h2 data-i="rs_t"></h2><p class="lead" data-i="rs_p"></p></div>
+<form id="rf" novalidate>
+<div class="two"><label><span data-i="date">Date de réservation</span><input type="date" name="d" required></label><label><span data-i="time">Heure d’arrivée</span><input type="time" name="t" required step="900"></label></div>
+<div class="two"><label><span data-i="guests">Nombre de personnes</span><input type="number" name="g" min="1" max="12" value="2" required></label><label><span data-i="phone">Téléphone</span><input type="tel" name="p" required autocomplete="tel"></label></div>
+<label><span data-i="name">Nom complet</span><input type="text" name="n" required autocomplete="name"></label>
+<label><span data-i="note">Précisions (facultatif)</span><textarea name="c" rows="2"></textarea></label>
+<button class="btn f" type="submit" data-i="rs_btn"></button><div class="msg" id="rm" role="status"></div></form>
+</div></section>
+
+<section id="galerie"><div class="wrap"><h2 data-i="gal_t"></h2><div class="gal" id="gal"></div></div></section><dialog id="lb" aria-label="Galerie"><button id="lbx" aria-label="Fermer">✕</button><button id="lbp" aria-label="Précédent">‹</button><figure><img id="lbi" alt=""><figcaption id="lbc"></figcaption></figure><button id="lbn" aria-label="Suivant">›</button></dialog>
+<section id="faq" class="faq" style="background:var(--sf)"><div class="wrap"><h2 data-i="fq_t"></h2><div id="fql"></div></div></section>
+<section id="contact"><div class="wrap"><h2 data-i="ct_t"></h2>
+<p data-i="addr"></p><p data-i="hours"></p><p class="nt" data-i="contact_note"></p>
+<p style="margin-top:12px"><a class="btn" target="_blank" rel="noopener" href="https://www.openstreetmap.org/search?query=Casablanca" data-i="route"></a></p><p id="wa" style="margin-top:12px"></p></div></section>
+</main>
+
+<footer><div class="wrap"><div><b>Darna Food</b><p data-i="ft1"></p></div><div><b data-i="ft_h"></b><p data-i="ft2"></p></div><div><b data-i="ft_l"></b><p data-i="ft3"></p></div><p class="fine" data-i="legal"></p></div></footer>
+
+<div id="scrim"></div>
+<aside id="drawer" role="dialog" aria-modal="true" aria-label="Panier" aria-hidden="true">
+<header><b style="font-size:1.2rem" data-i="cart"></b><button id="cx" class="btn" aria-label="Fermer" style="padding:.3em .9em">✕</button></header>
+<div class="body" id="cbody"></div>
+<div class="foot" id="cfoot"></div></aside>
+
+<script>
+const IMG={shawarma:"assets/photo-2.webp",margherita:"assets/photo-3.webp",harira:"assets/photo-4.webp",zaalouk:"assets/photo-5.webp",briouates:"assets/photo-6.webp",salades:"assets/photo-7.webp",keftatj:"assets/photo-8.webp",rfissa:"assets/photo-9.webp",pastilla:"assets/photo-10.webp",brochette:"assets/photo-11.webp",keftag:"assets/photo-12.webp",mixte:"assets/photo-13.webp",chawarma:"assets/photo-14.webp",burger:"assets/photo-15.webp",fromages:"assets/photo-16.webp",avocat:"assets/photo-17.webp",the:"assets/photo-18.webp",gazelle:"assets/photo-19.webp",chebakia:"assets/photo-20.webp",chicken:"assets/photo-21.webp",beef:"assets/photo-22.webp",veg:"assets/photo-23.webp",tanjia:"assets/photo-24.webp",couscous:"assets/photo-25.webp",cfine:"assets/photo-26.webp"};
+const CFG={deliveryFee:25,freeFrom:200,minOrder:80,codes:{DARNA10:.10},whatsapp:""};
+const T={fr:{n_menu:"Notre menu",n_story:"Notre histoire",n_resa:"Réservation",n_rev:"Avis",n_contact:"Contact",cart:"Panier",h1:"L'âme du Maroc, dans chaque bouchée.",h1p:"Des recettes marocaines authentiques, des saveurs généreuses et une hospitalité qui se partage.",b_menu:"Commander maintenant",b_resa:"Réserver une table",sig_t:"À la table de Darna",sig_p:"Quatre plats que l'on mijote lentement, dans la terre cuite, comme à la maison.",menu_t:"La carte",search:"Rechercher un plat",s_def:"Tri : par défaut",s_asc:"Prix croissant",s_desc:"Prix décroissant",all:"Tout",empty:"Aucun plat ne correspond. Essayez un autre mot ou une autre catégorie.",menu_note:"Prix en dirhams (MAD), indicatifs et fictifs pour ce prototype. Allergènes : à renseigner dans l'administration.",unav:"Indisponible",pop:"Populaire",spicy:"Épicé",veg:"Végétarien",new:"Nouveau",add:"Ajouter",st_t:"Darna, c'est « notre maison »",st_p1:"Texte fictif à remplacer : le restaurant naît d'un repas de famille à Casablanca, autour d'un tajine que l'on ne servait jamais avant que tout le monde soit assis.",st_p2:"La carte suit cet esprit : des plats de tradition cuits lentement, et quelques classiques de restauration rapide pour les soirs pressés.",pr_t:"Formules et offres",pr1:"Menu déjeuner",pr1d:"Plat du jour, boisson et dessert : 69 MAD.",pr1c:"Du lundi au vendredi, 12h–15h. Sur place.",pr2:"Formule duo",pr2d:"Deux tajines et deux thés à la menthe : 189 MAD.",pr2c:"Tous les jours. Non cumulable.",pr3:"Table familiale",pr3d:"Couscous royal pour 4 et boissons : 349 MAD.",pr3c:"Sur réservation, 24 h à l'avance.",rv_t:"Ce que disent nos clients",demo:"Avis de démonstration — fictifs, à remplacer par des avis modérés.",rv1:"Le tajine arrive encore bouillant, et le pain est chaud. Rien à redire.",rv1a:"Mohammed, oct. 2026",rv2:"On a réservé pour huit, tout le monde a été servi en même temps.",rv2a:"Najwa, sept. 2026",rv3:"La livraison est arrivée à l'heure, le couscous aussi chaud qu'au restaurant.",rv3a:"Youssef, sept. 2026",rs_t:"Réserver une table",rs_p:"Ouvert de 12h à 23h. Pour plus de 12 personnes, appelez-nous.",date:"Date",time:"Heure",guests:"Personnes",phone:"Téléphone",name:"Nom",note:"Précisions (facultatif)",rs_btn:"Envoyer la demande",ct_t:"Nous trouver",demo2:"Coordonnées fictives",addr:"12 rue Exemple, Quartier Maârif, Casablanca",hours:"Tous les jours, 12h–23h",fake:"",route:"Itinéraire",ft1:"Cuisine marocaine, Casablanca.",ft_h:"Livraison",ft2:"Livraison 25 MAD, offerte dès 200 MAD. Retrait sur place possible.",ft_l:"Informations",ft3:"Confidentialité · Conditions générales · Réservations",legal:"Prototype : mentions légales, RC/ICE et numéro WhatsApp à renseigner avant le lancement.",empty_cart:"Votre panier est vide. Ajoutez un plat depuis la carte.",sub:"Sous-total",deliv:"Livraison",disc:"Remise",total:"Total",mode_d:"Livraison",mode_p:"Retrait",promo:"Code promo",apply:"Appliquer",bad:"Code invalide.",ok:"Code appliqué.",cname:"Nom",cphone:"Téléphone",caddr:"Adresse de livraison",cnote:"Instructions",order:"Commander (paiement à la livraison)",min:"Minimum de commande : 80 MAD.",need:"Renseignez nom, téléphone et adresse.",done:"Commande de démonstration enregistrée dans ce navigateur. Numéro",done2:"Aucun paiement ni envoi : le calcul final et la validation se feront côté serveur.",r_ok:"Demande enregistrée (démo). Nous confirmerons par téléphone.",r_all:"Renseignez tous les champs obligatoires.",r_h:"Nous sommes ouverts de 12h à 23h.",r_p:"Date passée.",r_g:"De 1 à 12 personnes."},
+en:{n_menu:"Menu",n_story:"Our story",n_resa:"Reservations",n_rev:"Reviews",n_contact:"Contact",cart:"Cart",h1:"The soul of Morocco, in every bite.",h1p:"Authentic Moroccan recipes, generous flavours and hospitality made to be shared.",b_menu:"Order now",b_resa:"Book a table",sig_t:"At Darna's table",sig_p:"Four dishes simmered slowly in clay, the way they are at home.",menu_t:"The menu",search:"Search a dish",s_def:"Sort: default",s_asc:"Price, low to high",s_desc:"Price, high to low",all:"All",empty:"No dish matches. Try another word or category.",menu_note:"Prices in dirhams (MAD), indicative and fictional for this prototype. Allergens: to be filled in the admin.",unav:"Unavailable",pop:"Popular",spicy:"Spicy",veg:"Vegetarian",new:"New",add:"Add",st_t:"Darna means “our home”",st_p1:"Placeholder text: the restaurant began with a family lunch in Casablanca, around a tagine nobody served until everyone was seated.",st_p2:"The menu follows that spirit: slow-cooked traditional dishes, plus a few fast-food classics for busy evenings.",pr_t:"Set menus and offers",pr1:"Lunch menu",pr1d:"Dish of the day, drink and dessert: 69 MAD.",pr1c:"Mon–Fri, 12–3 pm. Dine-in only.",pr2:"Duo set",pr2d:"Two tagines and two mint teas: 189 MAD.",pr2c:"Daily. Cannot be combined.",pr3:"Family table",pr3d:"Royal couscous for 4 plus drinks: 349 MAD.",pr3c:"By reservation, 24 h ahead.",rv_t:"What guests say",demo:"Demo reviews — fictional, replace with moderated reviews.",rv1:"The tagine arrives still bubbling, and the bread is warm. Nothing to add.",rv1a:"Mohammed, Oct 2026",rv2:"We booked for eight and everyone was served at the same time.",rv2a:"Najwa, Sep 2026",rv3:"Delivery was on time and the couscous as hot as in the restaurant.",rv3a:"Youssef, Sep 2026",rs_t:"Book a table",rs_p:"Open 12 pm to 11 pm. For more than 12 guests, please call.",date:"Date",time:"Time",guests:"Guests",phone:"Phone",name:"Name",note:"Notes (optional)",rs_btn:"Send request",ct_t:"Find us",demo2:"Fictional details",addr:"12 Example St, Maârif, Casablanca",hours:"Daily, 12 pm–11 pm",fake:"",route:"Directions",ft1:"Moroccan cuisine, Casablanca.",ft_h:"Delivery",ft2:"Delivery 25 MAD, free from 200 MAD. Pickup available.",ft_l:"Information",ft3:"Privacy · Terms · Reservations",legal:"Prototype: legal notices, business IDs and WhatsApp number to be added before launch.",empty_cart:"Your cart is empty. Add a dish from the menu.",sub:"Subtotal",deliv:"Delivery",disc:"Discount",total:"Total",mode_d:"Delivery",mode_p:"Pickup",promo:"Promo code",apply:"Apply",bad:"Invalid code.",ok:"Code applied.",cname:"Name",cphone:"Phone",caddr:"Delivery address",cnote:"Instructions",order:"Place order (pay on delivery)",min:"Minimum order: 80 MAD.",need:"Enter name, phone and address.",done:"Demo order saved in this browser. Number",done2:"Nothing was paid or sent: final totals and validation will happen server-side.",r_ok:"Request saved (demo). We will confirm by phone.",r_all:"Fill in all required fields.",r_h:"We are open 12 pm to 11 pm.",r_p:"Date is in the past.",r_g:"1 to 12 guests."},
+ar:{n_menu:"قائمة الطعام",n_story:"قصتنا",n_resa:"الحجز",n_rev:"الآراء",n_contact:"اتصل بنا",cart:"السلة",h1:"روح المغرب في كل لقمة.",h1p:"وصفات مغربية أصيلة، نكهات سخية، وضيافة تُقتسم.",b_menu:"اطلب الآن",b_resa:"احجز طاولة",sig_t:"على مائدة دارنا",sig_p:"أربعة أطباق تُطهى ببطء في الفخار، كما في البيت.",menu_t:"القائمة",search:"ابحث عن طبق",s_def:"الترتيب: الافتراضي",s_asc:"السعر تصاعديًا",s_desc:"السعر تنازليًا",all:"الكل",empty:"لا يوجد طبق مطابق. جرّب كلمة أو فئة أخرى.",menu_note:"الأسعار بالدرهم (MAD)، تقريبية ووهمية في هذا النموذج. مسببات الحساسية: تُضاف من لوحة الإدارة.",unav:"غير متوفر",pop:"الأكثر طلبًا",spicy:"حار",veg:"نباتي",new:"جديد",add:"أضف",st_t:"«دارنا» تعني بيتنا",st_p1:"نص تجريبي للاستبدال: وُلد المطعم من غداء عائلي في الدار البيضاء حول طاجين لا يُقدَّم قبل جلوس الجميع.",st_p2:"وتسير القائمة على هذا النهج: أطباق تقليدية على نار هادئة، وبعض أطباق الوجبات السريعة لليالي المستعجلة.",pr_t:"عروض وصيغ",pr1:"قائمة الغداء",pr1d:"طبق اليوم ومشروب وحلوى: 69 درهمًا.",pr1c:"من الاثنين إلى الجمعة، 12–15. في المطعم فقط.",pr2:"صيغة الثنائي",pr2d:"طاجينان وكأسا شاي بالنعناع: 189 درهمًا.",pr2c:"يوميًا. لا تُجمع مع عروض أخرى.",pr3:"مائدة العائلة",pr3d:"كسكس ملكي لأربعة أشخاص مع المشروبات: 349 درهمًا.",pr3c:"بحجز مسبق قبل 24 ساعة.",rv_t:"ماذا يقول زبناؤنا",demo:"آراء تجريبية — وهمية، تُستبدل بآراء خاضعة للمراجعة.",rv1:"يصل الطاجين وهو لا يزال يغلي، والخبز ساخن. لا شيء يُضاف.",rv1a:"محمد، أكتوبر 2026",rv2:"حجزنا لثمانية أشخاص وقُدّم الطعام للجميع في وقت واحد.",rv2a:"نجوى، شتنبر 2026",rv3:"وصل التوصيل في الوقت والكسكس ساخن كما في المطعم.",rv3a:"يوسف، شتنبر 2026",rs_t:"احجز طاولة",rs_p:"نفتح من 12 ظهرًا إلى 11 ليلًا. لأكثر من 12 شخصًا يرجى الاتصال.",date:"التاريخ",time:"الساعة",guests:"عدد الأشخاص",phone:"الهاتف",name:"الاسم",note:"ملاحظات (اختياري)",rs_btn:"إرسال الطلب",ct_t:"أين نجدنا",demo2:"بيانات وهمية",addr:"12 زنقة المثال، المعاريف، الدار البيضاء",hours:"يوميًا، 12:00–23:00",fake:"",route:"الاتجاهات",ft1:"مطبخ مغربي، الدار البيضاء.",ft_h:"التوصيل",ft2:"التوصيل 25 درهمًا، مجاني ابتداءً من 200 درهم. الاستلام من المطعم ممكن.",ft_l:"معلومات",ft3:"الخصوصية · الشروط العامة · الحجوزات",legal:"نموذج أولي: الإشعارات القانونية وأرقام السجل التجاري والواتساب تُستكمل قبل الإطلاق.",empty_cart:"سلتك فارغة. أضف طبقًا من القائمة.",sub:"المجموع الفرعي",deliv:"التوصيل",disc:"خصم",total:"المجموع",mode_d:"توصيل",mode_p:"استلام",promo:"رمز الخصم",apply:"تطبيق",bad:"رمز غير صالح.",ok:"تم تطبيق الرمز.",cname:"الاسم",cphone:"الهاتف",caddr:"عنوان التوصيل",cnote:"تعليمات",order:"اطلب (الدفع عند التسليم)",min:"الحد الأدنى للطلب: 80 درهمًا.",need:"أدخل الاسم والهاتف والعنوان.",done:"تم حفظ طلب تجريبي في هذا المتصفح. الرقم",done2:"لم يتم أي دفع أو إرسال: الحساب النهائي والتحقق يتمان من جهة الخادم.",r_ok:"تم تسجيل الطلب (تجريبي). سنؤكد عبر الهاتف.",r_all:"املأ جميع الحقول الإلزامية.",r_h:"نفتح من 12 ظهرًا إلى 11 ليلًا.",r_p:"التاريخ في الماضي.",r_g:"من 1 إلى 12 شخصًا."}};
+Object.assign(T.fr,{wel:"Marhba bikom. Dkhlou, rakom f darkom.",st_t:"Darna : chez nous, chez vous",st_p1:"Dans une maison marocaine, personne ne mange seul. On ajoute un verre, on rompt le pain, on sert le thé avant même de demander ce qui vous amène.",st_p2:"Darna veut garder ce réflexe : un tajine qui mijote doucement, une table où l'on se rapproche, une porte ouverte à tous, quel que soit le budget.",s1t:"L'idée",s1p:"Le nom dit tout : darna, c'est « notre maison ». Pas un décor de restaurant, l'envie de recevoir comme on reçoit chez soi.",s2t:"Les valeurs de la maison",s2p:"Partager d'abord, faire de la place à chacun, ne jamais presser une table. Un proverbe nous guide : « Li 3ndo yakoul, w li ma 3ndouch hta howa yakoul. » C'est un esprit, pas une offre.",s3t:"La cuisine",s3p:"Une tanjia confite des heures, des tajines cuits dans la terre, du pain sorti du four. Et pour les soirs pressés, tacos, pizzas et burgers faits avec le même soin.",s4t:"Notre promesse",s4p:"En famille, entre amis ou seul : une place vous attend à table, des portions franches et un accueil sans façon.",st_note:"Récit de marque proposé pour ce prototype. Dates, fondateurs et lieu d'origine restent à confirmer par le propriétaire.",tj_t:"Le tajine, de près",tj_p:"Faites-le tourner, soulevez le couvercle : poulet fermier, citron confit et olives.",tj_btn:"Soulever le couvercle",tj_close:"Refermer",tj_start:"Lancer la vue 3D",tj_hint:"Glissez pour tourner, ou utilisez les flèches du clavier.",tj_fb:"La 3D n'est pas disponible sur cet appareil.",tj_add:"Ajouter au panier",sh_t:"À partager",sh_p:"Des assortiments pensés pour la table. Le prix est la somme des plats, sans remise.",sh1:"Pour deux",sh1d:"Deux tajines et deux thés à la menthe.",sh2:"En famille",sh2d:"Couscous royal, couscous aux sept légumes, tajine poulet, quatre harira et quatre thés.",sh3:"Entre amis",sh3d:"Grillade mixte, tanjia, pizza margherita et trois jus d'avocat.",sh_btn:"Ajouter au panier",fq_t:"Questions fréquentes",fq1:"Livrez-vous ?",fq1a:"Oui : 25 MAD, offerts dès 200 MAD. Les zones de livraison sont à définir par le propriétaire.",fq2:"Peut-on payer en ligne ?",fq2a:"Pas dans ce prototype : paiement à la livraison ou sur place.",fq3:"Et pour un grand groupe ?",fq3a:"Au-delà de 12 personnes, appelez-nous.",wa_btn:"Commander sur WhatsApp",wa_off:"Numéro WhatsApp à configurer avant le lancement."});
+Object.assign(T.en,{wel:"Marhba bikom. Come in, you're home.",st_t:"Darna: our place, your place",st_p1:"In a Moroccan home nobody eats alone. We add a glass, break the bread, and pour the tea before asking what brought you.",st_p2:"Darna keeps that reflex: a tagine simmering gently, a table that pulls everyone closer, a door open to all, whatever the budget.",s1t:"The idea",s1p:"The name says it: darna means “our home”. Not a restaurant set, but the wish to host the way we host at home.",s2t:"House values",s2p:"Share first, make room for everyone, never rush a table. A proverb guides us: “Li 3ndo yakoul, w li ma 3ndouch hta howa yakoul.” It is a spirit, not an offer.",s3t:"The kitchen",s3p:"Tanjia confited for hours, tagines cooked in clay, bread fresh from the oven. And for busy evenings, tacos, pizzas and burgers made with the same care.",s4t:"Our promise",s4p:"With family, friends or alone: a seat at the table, honest portions and an easy welcome.",st_note:"Brand story proposed for this prototype. Dates, founders and origin remain to be confirmed by the owner.",tj_t:"The tagine, up close",tj_p:"Turn it, lift the lid: free-range chicken, preserved lemon and olives.",tj_btn:"Lift the lid",tj_close:"Close the lid",tj_start:"Start 3D view",tj_hint:"Drag to rotate, or use the arrow keys.",tj_fb:"3D is not available on this device.",tj_add:"Add to cart",sh_t:"To share",sh_p:"Platters made for the table. Price is the sum of the dishes, no discount.",sh1:"For two",sh1d:"Two tagines and two mint teas.",sh2:"Family",sh2d:"Royal couscous, seven-vegetable couscous, chicken tagine, four harira and four teas.",sh3:"Friends",sh3d:"Mixed grill, tanjia, margherita pizza and three avocado juices.",sh_btn:"Add to cart",fq_t:"Questions",fq1:"Do you deliver?",fq1a:"Yes: 25 MAD, free from 200 MAD. Delivery zones are for the owner to define.",fq2:"Can I pay online?",fq2a:"Not in this prototype: pay on delivery or on site.",fq3:"What about large groups?",fq3a:"For more than 12 guests, please call us.",wa_btn:"Order on WhatsApp",wa_off:"WhatsApp number to configure before launch."});
+Object.assign(T.ar,{wel:"مرحبا بكم، دخلو، راكم فدراكم.",st_t:"دارنا: عندنا وعندكم",st_p1:"في البيت المغربي لا أحد يأكل وحده. نزيد كأسًا، نقتسم الخبز، ونقدم الشاي قبل أن نسأل عن سبب الزيارة.",st_p2:"تريد دارنا أن تحفظ هذه العادة: طاجين ينضج على مهل، مائدة يقترب حولها الجميع، وباب مفتوح للكل مهما كانت الميزانية.",s1t:"الفكرة",s1p:"الاسم يقول كل شيء: «دارنا» أي بيتنا. ليس ديكور مطعم، بل رغبة في الاستقبال كما نستقبل في بيوتنا.",s2t:"قيم البيت",s2p:"الاقتسام أولًا، ومكان لكل واحد، ولا نستعجل أي مائدة. يوجهنا مثل: «اللي عندو ياكل، واللي ما عندوش حتى هو ياكل». هو روح نستلهمها، وليس عرضًا.",s3t:"المطبخ",s3p:"طنجية تُطهى ساعات، طواجين في الفخار، وخبز خارج من الفرن. وللمساءات المستعجلة: تاكوس وبيتزا وبرغر بنفس العناية.",s4t:"وعدنا",s4p:"مع العائلة أو الأصدقاء أو وحدكم: مكان ينتظركم على المائدة، حصص سخية، واستقبال بلا تكلف.",st_note:"حكاية العلامة مقترحة لهذا النموذج. التواريخ والمؤسسون ومكان النشأة يؤكدها صاحب المطعم.",tj_t:"الطاجين عن قرب",tj_p:"أدِره وارفع الغطاء: دجاج بلدي وليمون مخلل وزيتون.",tj_btn:"ارفع الغطاء",tj_close:"أغلق الغطاء",tj_start:"شغّل العرض ثلاثي الأبعاد",tj_hint:"اسحب للتدوير أو استعمل أسهم لوحة المفاتيح.",tj_fb:"العرض ثلاثي الأبعاد غير متاح على هذا الجهاز.",tj_add:"أضف إلى السلة",sh_t:"للاقتسام",sh_p:"تشكيلات للمائدة. السعر هو مجموع الأطباق دون تخفيض.",sh1:"لاثنين",sh1d:"طاجينان وكأسا شاي بالنعناع.",sh2:"مع العائلة",sh2d:"كسكس ملكي وكسكس بسبع خضر وطاجين دجاج وأربع حريرات وأربعة كؤوس شاي.",sh3:"بين الأصدقاء",sh3d:"مشويات مشكلة وطنجية وبيتزا مارغريتا وثلاثة عصائر أفوكادو.",sh_btn:"أضف إلى السلة",fq_t:"أسئلة شائعة",fq1:"هل توصلون؟",fq1a:"نعم، بـ25 درهمًا ومجانًا ابتداءً من 200 درهم. مناطق التوصيل يحددها صاحب المطعم.",fq2:"هل يمكن الدفع عبر الإنترنت؟",fq2a:"ليس في هذا النموذج: الدفع عند التسليم أو في المطعم.",fq3:"وماذا عن المجموعات الكبيرة؟",fq3a:"لأكثر من 12 شخصًا اتصلوا بنا.",wa_btn:"اطلب عبر واتساب",wa_off:"رقم واتساب يُضاف قبل الإطلاق."});
+const CATS={starters:{fr:"Entrées",en:"Starters",ar:"المقبلات"},tagines:{fr:"Tajines",en:"Tagines",ar:"الطواجين"},couscous:{fr:"Couscous",en:"Couscous",ar:"الكسكس"},tanjia:{fr:"Tanjia et spécialités",en:"Tanjia & specialities",ar:"الطنجية"},grills:{fr:"Grillades",en:"Grills",ar:"المشويات"},street:{fr:"Tacos, burgers",en:"Tacos, burgers",ar:"تاكوس وبرغر"},pizza:{fr:"Pizzas",en:"Pizzas",ar:"بيتزا"},drinks:{fr:"Boissons",en:"Drinks",ar:"المشروبات"},desserts:{fr:"Desserts",en:"Desserts",ar:"الحلويات"}};
+// [id,cat,prix MAD,fr,en,ar,image,tags(p=populaire,s=épicé,v=végé,n=nouveau),dispo]
+const M=[["harira","starters",18,"Harira","Harira soup","حريرة","harira","p",1],["zaalouk","starters",25,"Zaalouk","Zaalouk aubergine salad","زعلوك","zaalouk","v",1],["briouates","starters",40,"Briouates (6)","Briouates (6)","بريوات (6)","briouates","",1],["salades","starters",50,"Assortiment de salades marocaines","Moroccan salad platter","تشكيلة سلطات مغربية","salades","v",1],
+["tj-poulet","tagines",85,"Tajine poulet, citron confit et olives","Chicken tagine, preserved lemon & olives","طاجين الدجاج بالليمون المخلل والزيتون","chicken","p",1],["tj-pruneaux","tagines",110,"Tajine de viande aux pruneaux","Beef tagine with prunes & almonds","طاجين اللحم بالبرقوق","beef","p",1],["tj-kefta","tagines",75,"Tajine kefta aux œufs","Kefta tagine with eggs","طاجين الكفتة بالبيض","keftatj","s",1],["tj-legumes","tagines",65,"Tajine de légumes de saison","Seasonal vegetable tagine","طاجين الخضر الموسمية","veg","v",1],
+["cs-7","couscous",80,"Couscous aux sept légumes","Seven-vegetable couscous","كسكس بسبع خضر","couscous","v,p",1],["cs-royal","couscous",135,"Couscous royal","Royal couscous","كسكس ملكي","cfine","p",1],["rfissa","couscous",95,"Rfissa","Rfissa","رفيسة","rfissa","",1],["pastilla","couscous",120,"Pastilla au poulet","Chicken pastilla","بسطيلة بالدجاج","pastilla","",1],
+["tanjia","tanjia",105,"Tanjia marrakchia","Marrakchia tanjia","طنجية مراكشية","tanjia","p",1],["br-poulet","grills",60,"Brochettes de poulet","Chicken skewers","شواء الدجاج","brochette","",1],["kefta","grills",65,"Kefta grillée","Grilled kefta","كفتة مشوية","keftag","s",1],["mixte","grills",120,"Grillade mixte","Mixed grill","مشويات مشكلة","mixte","",1],
+["chawarma","street",40,"Chawarma","Chawarma","شاورما","shawarma","p",1],["tacos","street",45,"Tacos poulet","Chicken tacos","تاكوس الدجاج","chawarma","s",1],["burger","street",60,"Burger signature Darna","Darna signature burger","برغر دارنا","burger","n",1],["margherita","pizza",50,"Pizza margherita","Margherita pizza","بيتزا مارغريتا","margherita","v",1],["4f","pizza",75,"Pizza quatre fromages","Four-cheese pizza","بيتزا الأجبان الأربعة","fromages","v",1],
+["avocat","drinks",30,"Jus d'avocat","Avocado juice","عصير الأفوكادو","avocat","",1],["the","drinks",15,"Thé à la menthe","Mint tea","شاي بالنعناع","the","p",1],["gazelle","desserts",30,"Cornes de gazelle (4)","Gazelle horns (4)","كعب الغزال (4)","gazelle","",1],["chebakia","desserts",25,"Chebakia","Chebakia","الشباكية","chebakia","n",0]];
+const SIG=["tj-poulet","cs-royal","tanjia","tj-pruneaux"];
+const SD={"tj-poulet":["Poulet fermier mijoté avec citron confit et olives violettes.","Free-range chicken simmered with preserved lemon and olives.","دجاج بلدي مطهو على نار هادئة مع الليمون المخلل والزيتون."],"cs-royal":["Semoule fine, sept légumes, pois chiches et viandes.","Fine semolina, seven vegetables, chickpeas and meats.","سميد رقيق وسبع خضر وحمص ولحوم."],"tanjia":["Viande confite des heures dans la jarre, aux épices de Marrakech.","Meat slow-cooked for hours in the jar with Marrakech spices.","لحم يُطهى لساعات في الجرة بتوابل مراكش."],"tj-pruneaux":["Bœuf fondant, pruneaux et amandes grillées.","Tender beef, prunes and toasted almonds.","لحم طري مع البرقوق واللوز المحمص."]};
+let L=localStorage.getItem("df_l")||(navigator.language||"fr").slice(0,2);if(!T[L])L="fr";
+let cat="all",cart={},promo=null,mode="d";
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const by=id=>M.find(m=>m[0]===id),nm=m=>m[{fr:3,en:4,ar:5}[L]],mad=n=>n.toLocaleString(L==="ar"?"ar-MA":L==="en"?"en-US":"fr-MA")+" MAD";
+const tg=m=>m[7].split(",").filter(Boolean).map(t=>`<span class="tag">${T[L][{p:"pop",s:"spicy",v:"veg",n:"new"}[t]]}</span>`).join("");
+function setLang(l){L=l;try{localStorage.setItem("df_l",l)}catch(e){}document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
+$$("[data-i]").forEach(e=>e.textContent=T[l][e.dataset.i]);$$("[data-i-ph]").forEach(e=>e.placeholder=T[l][e.dataset.iPh]);
+$$(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));render();drawCart()}
+function render(){
+$("#sig").innerHTML=SIG.map(id=>{const m=by(id),k=L==="fr"?0:L==="en"?1:2;return `<article><div class="arch"><img src="${IMG[m[6]]}" alt="${nm(m)}" loading="lazy"></div><h3>${nm(m)}</h3><p>${SD[id][k]}</p><div class="row"><span>${mad(m[2])}</span><button class="btn f" data-add="${id}">${T[L].add}</button></div></article>`}).join("");
+$("#chips").innerHTML=[["all",T[L].all],...Object.entries(CATS).map(([k,v])=>[k,v[L]])].map(([k,v])=>`<button data-c="${k}" aria-pressed="${k===cat}">${v}</button>`).join("");
+const q=$("#q").value.trim().toLowerCase(),s=$("#sort").value;
+let r=M.filter(m=>(cat==="all"||m[1]===cat)&&(!q||m.slice(3,6).join(" ").toLowerCase().includes(q)));
+if(s)r=[...r].sort((a,b)=>s==="a"?a[2]-b[2]:b[2]-a[2]);
+$("#empty").hidden=r.length>0;
+$("#items").innerHTML=r.map(m=>`<div class="it ${m[8]?"":"off"}">${m[6]?`<img src="${IMG[m[6]]}" alt="" loading="lazy">`:""}<div class="n"><b>${nm(m)}</b>${tg(m)}${m[8]?"":`<small>${T[L].unav}</small>`}</div><span class="p">${mad(m[2])}</span><button class="add" data-add="${m[0]}" aria-label="${T[L].add} ${nm(m)}" ${m[8]?"":"disabled"}>+</button></div>`).join("")}
+function totals(){let sub=0;for(const id in cart)sub+=by(id)[2]*cart[id];const disc=promo?Math.round(sub*CFG.codes[promo]):0;const fee=mode==="p"||!sub?0:(sub-disc>=CFG.freeFrom?0:CFG.deliveryFee);return{sub,disc,fee,tot:sub-disc+fee}}
+function drawCart(){const ids=Object.keys(cart),t=totals(),x=T[L];$("#cnt").textContent=ids.reduce((a,i)=>a+cart[i],0);
+$("#cbody").innerHTML=ids.length?ids.map(id=>{const m=by(id);return `<div class="ci"><div class="n"><b>${nm(m)}</b><br><small>${mad(m[2])}</small></div><div class="q"><button data-q="${id}" data-d="-1" aria-label="−">−</button><span>${cart[id]}</span><button data-q="${id}" data-d="1" aria-label="+">+</button></div></div>`}).join(""):`<p style="padding:24px 0">${x.empty_cart}</p>`;
+$("#cfoot").innerHTML=ids.length?`<div class="seg"><label><input type="radio" name="m" value="d" ${mode==="d"?"checked":""}>${x.mode_d}</label><label><input type="radio" name="m" value="p" ${mode==="p"?"checked":""}>${x.mode_p}</label></div>
+<div style="display:flex;gap:8px"><input type="text" id="pc" placeholder="${x.promo}" aria-label="${x.promo}" value="${promo||""}"><button class="btn" id="pa">${x.apply}</button></div><small id="pm"></small>
+<div class="tot"><span>${x.sub}</span><span>${mad(t.sub)}</span></div>${t.disc?`<div class="tot"><span>${x.disc}</span><span>−${mad(t.disc)}</span></div>`:""}<div class="tot"><span>${x.deliv}</span><span>${mad(t.fee)}</span></div><div class="tot b"><span>${x.total}</span><span>${mad(t.tot)}</span></div>
+<input type="text" id="cn" placeholder="${x.cname}" aria-label="${x.cname}" autocomplete="name"><input type="tel" id="cp" placeholder="${x.cphone}" aria-label="${x.cphone}" autocomplete="tel">${mode==="d"?`<input type="text" id="ca" placeholder="${x.caddr}" aria-label="${x.caddr}">`:""}<textarea id="cc" rows="2" placeholder="${x.cnote}" aria-label="${x.cnote}"></textarea>
+<button class="btn f" id="go">${x.order}</button><button class="btn" id="wab">${x.wa_btn}</button><div class="msg" id="om" role="status"></div>`:""}
+function open(o){$("#drawer").classList.toggle("open",o);$("#scrim").classList.toggle("open",o);$("#drawer").setAttribute("aria-hidden",!o);if(o)$("#cx").focus();else $("#cartBtn").focus()}
+function say(el,t,err){el.textContent=t;el.className="msg"+(err?" err":"");el.style.display="block"}
+document.addEventListener("click",e=>{const a=e.target.closest("[data-add]");
+if(a){cart[a.dataset.add]=(cart[a.dataset.add]||0)+1;drawCart();a.textContent!=="+"&&(a.dataset.t=a.textContent);return}
+const c=e.target.closest("[data-c]");if(c){cat=c.dataset.c;render();return}
+const l=e.target.closest("[data-l]");if(l){setLang(l.dataset.l);return}
+const q=e.target.closest("[data-q]");if(q){const id=q.dataset.q;cart[id]+=+q.dataset.d;if(cart[id]<1)delete cart[id];drawCart();return}
+if(e.target.id==="pa"){const c=$("#pc").value.trim().toUpperCase();promo=CFG.codes[c]?c:null;drawCart();say($("#pm"),promo?T[L].ok:T[L].bad,!promo);$("#pm").className="";return}
+if(e.target.id==="go"){const t=totals(),x=T[L],n=$("#cn").value.trim(),p=$("#cp").value.trim(),ad=$("#ca")?.value.trim();
+if(!n||p.length<8||(mode==="d"&&!ad))return say($("#om"),x.need,1);
+if(mode==="d"&&t.sub<CFG.minOrder)return say($("#om"),x.min,1);
+const no="DF-"+Date.now().toString(36).toUpperCase();try{localStorage.setItem("df_order_"+no,JSON.stringify({cart,t,mode,n,status:"pending"}))}catch(_){}
+cart={};promo=null;drawCart();$("#cbody").innerHTML=`<p style="padding:24px 0"><b>${x.done} ${no}</b><br>${x.done2}</p>`;return}
+if(e.target.closest("#cartBtn"))open(true);if(e.target.closest("#cx")||e.target.id==="scrim")open(false);
+if(e.target.closest("#nav a"))$("#nav").classList.remove("open")});
+document.addEventListener("change",e=>{if(e.target.name==="m"){mode=e.target.value;drawCart()}});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")open(false)});
+$("#burger").onclick=()=>{const o=$("#nav").classList.toggle("open");$("#burger").setAttribute("aria-expanded",o)};
+$("#q").oninput=render;$("#sort").onchange=render;
+$("#rf").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target),x=T[L],m=$("#rm");
+const d=f.get("d"),t=f.get("t"),g=+f.get("g");
+if(!d||!t||!f.get("n").trim()||String(f.get("p")).trim().length<8)return say(m,x.r_all,1);
+if(new Date(d+"T23:59")<new Date())return say(m,x.r_p,1);
+if(g<1||g>12)return say(m,x.r_g,1);
+if(t<"12:00"||t>"22:00")return say(m,x.r_h,1);
+say(m,x.r_ok);e.target.reset()};
+setLang(L);
+</script>
+<script>
+const RM=matchMedia("(prefers-reduced-motion:reduce)").matches,SETS={duo:{"tj-poulet":1,"tj-pruneaux":1,the:2},famille:{"cs-royal":1,"cs-7":1,"tj-poulet":1,harira:4,the:4},amis:{mixte:1,tanjia:1,margherita:1,avocat:3}};
+let tjOn=0,lid=false;
+const FQ={"fr": [["Livrez-vous ?", "Oui. La livraison coûte 25 MAD et elle est offerte dès 200 MAD. Le minimum de commande est de 80 MAD."], ["Peut-on payer en ligne ?", "Pas pour le moment : le paiement se fait à la livraison ou au restaurant."], ["Quels sont vos horaires ?", "Nous sommes ouverts tous les jours, de 12h à 23h."], ["Faut-il réserver ?", "Ce n'est pas obligatoire, mais c'est recommandé le week-end et à partir de six personnes."], ["Et pour un grand groupe ?", "Au-delà de 12 personnes, appelez-nous au +212 6 49 71 10 28 ou écrivez-nous sur WhatsApp."], ["Avez-vous des plats végétariens ?", "Oui : tajine de légumes de saison, couscous aux sept légumes, zaalouk, assortiment de salades et pizza margherita."], ["Et pour les allergies ?", "Signalez-les dans les instructions de votre commande ou à votre arrivée. La liste des allergènes de chaque plat sera ajoutée prochainement."], ["Combien de temps pour être livré ?", "Nous annonçons un délai à la confirmation de votre commande. Il dépend de l'affluence et de votre adresse."], ["Puis-je venir chercher ma commande ?", "Bien sûr. Choisissez « Retrait » dans le panier : pas de frais de livraison."], ["Puis-je modifier ou annuler ma commande ?", "Appelez-nous au plus vite : c'est simple tant que la préparation n'a pas commencé."]], "en": [["Do you deliver?", "Yes. Delivery costs 25 MAD and is free from 200 MAD. The minimum order is 80 MAD."], ["Can I pay online?", "Not yet: you pay on delivery or at the restaurant."], ["What are your opening hours?", "We are open every day, 12 pm to 11 pm."], ["Do I need to book?", "Not required, but recommended at weekends and for six or more guests."], ["What about large groups?", "For more than 12 guests, call +212 6 49 71 10 28 or message us on WhatsApp."], ["Do you have vegetarian dishes?", "Yes: seasonal vegetable tagine, seven-vegetable couscous, zaalouk, the salad platter and margherita pizza."], ["What about allergies?", "Tell us in your order instructions or when you arrive. A per-dish allergen list will be added soon."], ["How long does delivery take?", "We give an estimate when your order is confirmed. It depends on how busy we are and on your address."], ["Can I collect my order?", "Of course. Choose “Pickup” in the cart: no delivery fee."], ["Can I change or cancel my order?", "Call us as soon as possible: it is easy as long as preparation has not started."]], "ar": [["هل توصلون؟", "نعم. التوصيل بـ25 درهمًا ومجاني ابتداءً من 200 درهم. الحد الأدنى للطلب 80 درهمًا."], ["هل يمكن الدفع عبر الإنترنت؟", "ليس حاليًا: الدفع عند التسليم أو في المطعم."], ["ما هي ساعات العمل؟", "نفتح كل يوم من 12 ظهرًا إلى 11 ليلًا."], ["هل يجب الحجز؟", "ليس إلزاميًا، لكنه مستحسن في نهاية الأسبوع ولستة أشخاص فأكثر."], ["وماذا عن المجموعات الكبيرة؟", "لأكثر من 12 شخصًا اتصلوا بنا على +212 6 49 71 10 28 أو راسلونا عبر واتساب."], ["هل لديكم أطباق نباتية؟", "نعم: طاجين الخضر الموسمية، كسكس بسبع خضر، زعلوك، تشكيلة السلطات وبيتزا مارغريتا."], ["وماذا عن الحساسية؟", "أخبرونا في تعليمات الطلب أو عند الوصول. ستُضاف قريبًا قائمة مسببات الحساسية لكل طبق."], ["كم تستغرق مدة التوصيل؟", "نخبركم بالمدة عند تأكيد الطلب، وهي تتوقف على الازدحام وعنوانكم."], ["هل يمكنني استلام طلبي من المطعم؟", "طبعًا. اختاروا «استلام» في السلة: بدون رسوم توصيل."], ["هل يمكن تعديل الطلب أو إلغاؤه؟", "اتصلوا بنا بأسرع ما يمكن: الأمر سهل ما لم يبدأ التحضير."]]};const _sl=setLang;
+setLang=function(l){_sl(l);$("#fql").innerHTML=FQ[l].map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join("");$("#tjp").textContent=T[l].tj_p+" "+mad(by("tj-poulet")[2]);
+$$("[data-sp]").forEach(e=>e.textContent=mad(Object.entries(SETS[e.dataset.sp]).reduce((a,[i,q])=>a+by(i)[2]*q,0)));
+$("#wa").innerHTML=CFG.whatsapp?`<a class="btn" target="_blank" rel="noopener" href="https://wa.me/${CFG.whatsapp}">${T[l].wa_btn}</a>`:`<small>${T[l].wa_off}</small>`;
+$("#tjlid").textContent=T[l][lid?"tj_close":"tj_btn"]};
+document.addEventListener("click",e=>{const b=e.target.closest("[data-set]");if(b){for(const[i,q]of Object.entries(SETS[b.dataset.set]))cart[i]=(cart[i]||0)+q;drawCart();open(true)}});
+$("#tjimg").src=IMG.chicken;
+// Enhanced 3D viewer is initialized by maison.js.
+$("#tjgo").onclick=()=>window.startDarna3D?.();
+$("#tjlid").onclick=()=>window.toggleDarnaLid?.();
+setLang(L);
+</script>
+<script>
+(function(){window.__rv=1;
+const RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+Object.assign(T.fr,{gal_t:"Galerie"});Object.assign(T.en,{gal_t:"Gallery"});Object.assign(T.ar,{gal_t:"معرض الصور"});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12,rootMargin:"0px 0px -6% 0px"});
+function rv(el,d){el.classList.add("rv");el.style.setProperty("--d",d+"ms");io.observe(el)}
+[["section h2",0],["section .lead",80],[".story dl>*",70],["#tj",0],[".promos>div",90],[".rev blockquote",90],[".faq details",50],["#rf",0],["#gal",0],["#contact p",60]].forEach(([s,d])=>$$(s).forEach((e,i)=>rv(e,Math.min(i*d,400))));
+$$(".zl").forEach(e=>io.observe(e));
+let first=true;const _r=render;
+render=function(){_r();const it=$("#items");it.classList.remove("sw");void it.offsetWidth;it.classList.add("sw");it.querySelectorAll(".it").forEach((e,i)=>e.style.setProperty("--i",Math.min(i,14)));
+$$("#sig article").forEach((a,i)=>{a.classList.add("rv");a.style.setProperty("--d",i*90+"ms");if(first)io.observe(a);else a.classList.add("in")});first=false};
+const EMPTY='<svg class="em" viewBox="0 0 64 70" aria-hidden="true"><path d="M8 66V30C8 14 20 4 32 4s24 10 24 26v36"/><path d="M18 66V32c0-8 6-14 14-14s14 6 14 14v34"/></svg>';
+let prev=[],cnt=0;const _d=drawCart;
+drawCart=function(){_d();const ids=Object.keys(cart);$$("#cbody .ci").forEach((e,i)=>{if(!prev.includes(ids[i]))e.classList.add("nw")});
+const n=ids.reduce((a,i)=>a+cart[i],0);if(n>cnt&&!RM){const b=$("#cartBtn");b.classList.remove("bump");void b.offsetWidth;b.classList.add("bump")}cnt=n;prev=ids;
+if(!ids.length)$("#cbody").insertAdjacentHTML("afterbegin",EMPTY)};
+const GAL=["cs-7","tj-poulet","tanjia","pastilla","br-poulet","tj-pruneaux","the","chebakia"];let gi=0;
+function galR(){$("#gal").innerHTML=GAL.map((id,i)=>{const m=by(id);return '<button data-g="'+i+'" aria-label="'+nm(m)+'"><img src="'+IMG[m[6]]+'" alt="" loading="lazy" onerror="this.parentNode.hidden=true"><span>'+nm(m)+'</span></button>'}).join("")}
+function galShow(i){gi=(i+GAL.length)%GAL.length;const m=by(GAL[gi]);$("#lbi").src=IMG[m[6]];$("#lbi").alt=nm(m);$("#lbc").textContent=nm(m)}
+const _s=setLang;setLang=function(l){_s(l);galR();$("#introS").textContent=T[l].h1};
+document.addEventListener("click",e=>{const b=e.target.closest("[data-add]");
+if(b&&!b.disabled){const o=b.textContent;if(o!=="✓"){b.textContent="✓";b.classList.add("ok");$("#live").textContent=nm(by(b.dataset.add))+" +1";setTimeout(()=>{b.textContent=o;b.classList.remove("ok")},900)}}
+const g=e.target.closest("[data-g]");if(g){galShow(+g.dataset.g);$("#lb").showModal()}
+if(e.target.id==="lbx"||e.target.id==="lb")$("#lb").close();if(e.target.id==="lbp")galShow(gi-1);if(e.target.id==="lbn")galShow(gi+1)});
+$("#lb").addEventListener("keydown",e=>{const r=document.documentElement.dir==="rtl"?-1:1;if(e.key==="ArrowRight")galShow(gi+r);if(e.key==="ArrowLeft")galShow(gi-r)});
+const hd=$("header"),hi=$(".hero .hbg");let tk=0;
+addEventListener("scroll",()=>{if(tk)return;tk=1;requestAnimationFrame(()=>{tk=0;const y=scrollY;hd.classList.toggle("sc",y>20);if(!RM&&innerWidth>860)hi.style.translate="0 "+Math.min(y,400)*.05+"px"})},{passive:true});
+const di=()=>document.documentElement.classList.remove("intro");$("#intro").onclick=di;setTimeout(di,2400);
+$("#q").oninput=render;$("#sort").onchange=render;
+setLang(L)})();
+</script>
+<script>
+(function(){const RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const Z='<svg class="zl" viewBox="0 0 240 16" aria-hidden="true"><path pathLength="1" d="M0 8H100"/><path pathLength="1" d="M140 8H240"/><g transform="translate(120 8)" pathLength="1"><rect x="-6" y="-6" width="12" height="12"/><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)"/></g></svg>';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.2});
+$$("section h2").forEach(h=>{const n=h.nextElementSibling;if(!(n&&n.classList.contains("zl")))h.insertAdjacentHTML("afterend",Z)});
+$$(".zl").forEach(z=>io.observe(z));
+$$("footer .wrap>*").forEach((e,i)=>{e.classList.add("rv");e.style.setProperty("--d",i*90+"ms");io.observe(e)});
+$(".hero").insertAdjacentHTML("beforeend",'<svg class="steam" viewBox="0 0 120 240" aria-hidden="true"><path d="M30 230C50 200 10 170 30 140S50 90 30 60"/><path d="M60 230C80 200 40 170 60 140S80 90 60 60"/><path d="M90 230C110 200 70 170 90 140S110 90 90 60"/></svg>');
+document.body.insertAdjacentHTML("beforeend",'<div id="pb"></div><button id="up">↑</button>');
+const UP={fr:"Haut de page",en:"Back to top",ar:"أعلى الصفحة"};
+$("#up").onclick=()=>scrollTo({top:0,behavior:RM?"auto":"smooth"});
+addEventListener("scroll",()=>$("#up").classList.toggle("show",scrollY>700),{passive:true});
+const MQ=["harira","tj-poulet","cs-royal","tanjia","pastilla","br-poulet","the","chebakia"];
+function mq(){const g='<div class="g">'+MQ.map(id=>"<span>"+nm(by(id))+"</span><i>✦</i>").join("")+"</div>";$("#mqt").innerHTML=g+g}
+let ini=true;const _s=setLang;
+setLang=function(l){_s(l);mq();$("#up").setAttribute("aria-label",UP[l]);if(!ini&&!RM){const m=$("main");m.classList.remove("lc");void m.offsetWidth;m.classList.add("lc")}ini=false};
+setLang(L)})();
+</script>
+<script>
+(function(){
+const PH="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><rect width="80" height="80" fill="#24392F"/><path d="M22 66V38C22 26 31 18 40 18s18 8 18 20v28" fill="none" stroke="#C5A46D" stroke-width="3"/></svg>');
+addEventListener("error",e=>{const t=e.target;if(t&&t.tagName==="IMG"&&!t.dataset.f){t.dataset.f=1;t.src=PH}},true);
+const hs=()=>history.state&&history.state.m;
+function push(m){try{if(hs()!==m)history.pushState({m:m},"")}catch(_){}}
+const _o=open;
+open=function(o){if(o){push("cart");_o(true)}else{if(hs()==="cart"){history.back();return}_o(false)}};
+document.addEventListener("click",e=>{if(e.target.closest("[data-g]"))push("lb")});
+$("#lb").addEventListener("close",()=>{if(hs()==="lb")history.back()});
+addEventListener("popstate",()=>{if($("#drawer").classList.contains("open"))_o(false);if($("#lb").open)$("#lb").close()});
+
+})();
+</script>
+<div class="toast" id="toast" role="status"></div><script src="assets/three.min.js" defer></script><script src="assets/ceramic-fallback.js" defer></script><script src="assets/maison.js" defer></script><script src="assets/motion.js" defer></script><script src="assets/journey.js" defer></script><script src="assets/editorial.js" defer></script></body>
+</html>
